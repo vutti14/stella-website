@@ -1,0 +1,14 @@
+# Clean URLs — redirect /about → /about.html internally
+/thank-you       /thank-you.html  200
+/about           /about.html      200
+/system          /system.html     200
+/tiers           /tiers.html      200
+/process         /process.html    200
+/projects        /projects.html   200
+/contact         /contact.html    200
+/showroom        /showroom.html   200
+
+# Force HTTPS redirect (Netlify handles this automatically but explicit is better)
+http://stella.co.th/*    https://stella.co.th/:splat    301!
+http://www.stella.co.th/* https://stella.co.th/:splat    301!
+https://www.stella.co.th/* https://stella.co.th/:splat   301!
