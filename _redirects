@@ -1,4 +1,6 @@
-# Clean URLs — redirect /about → /about.html internally
+# Clean URLs — Netlify rewrite /about → /about.html (200).
+# GitHub Pages already serves about.html at /about (no trailing slash).
+# Relative links in the HTML (href="about", not href="/about") work on both.
 /thank-you       /thank-you.html  200
 /about           /about.html      200
 /system          /system.html     200

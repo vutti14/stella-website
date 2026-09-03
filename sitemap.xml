@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://stella.co.th/</loc>
+    <loc>https://vutti14.github.io/stella-website/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://stella.co.th/about</loc>
+    <loc>https://vutti14.github.io/stella-website/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stella.co.th/system</loc>
+    <loc>https://vutti14.github.io/stella-website/system</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stella.co.th/tiers</loc>
+    <loc>https://vutti14.github.io/stella-website/tiers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stella.co.th/process</loc>
+    <loc>https://vutti14.github.io/stella-website/process</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stella.co.th/projects</loc>
+    <loc>https://vutti14.github.io/stella-website/projects</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stella.co.th/contact</loc>
+    <loc>https://vutti14.github.io/stella-website/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stella.co.th/showroom</loc>
+    <loc>https://vutti14.github.io/stella-website/showroom</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

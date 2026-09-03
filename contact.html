@@ -7,14 +7,14 @@
 <!-- SEO -->
 <title>Contact — STELLA</title>
 <meta name="description" content="Direct lines for homeowners, architects, developers, and existing STELLA homes. Bangkok showroom by appointment.">
-<link rel="canonical" href="https://stella.co.th/contact">
+<link rel="canonical" href="https://vutti14.github.io/stella-website/contact">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Contact — STELLA">
 <meta property="og:description" content="Direct lines for homeowners, architects, developers, and existing STELLA homes. Bangkok showroom by appointment.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://stella.co.th/contact">
-<meta property="og:image" content="https://stella.co.th/og-image.png">
+<meta property="og:url" content="https://vutti14.github.io/stella-website/contact">
+<meta property="og:image" content="https://vutti14.github.io/stella-website/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_US">
@@ -25,10 +25,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Contact — STELLA">
 <meta name="twitter:description" content="Direct lines for homeowners, architects, developers, and existing STELLA homes. Bangkok showroom by appointment.">
-<meta name="twitter:image" content="https://stella.co.th/og-image.png">
+<meta name="twitter:image" content="https://vutti14.github.io/stella-website/og-image.png">
 
 <!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 
 <!-- Theme color (mobile browser chrome) -->
 <meta name="theme-color" content="#0E0E0E">
@@ -41,14 +41,14 @@
 <a href="#main" class="skip">Skip to content</a>
 <nav class="nav">
   <div class="nav-cta">+66 (0) 2 ___ ____</div>
-  <a href="/" class="nav-logo">STELLA</a>
+  <a href="./" class="nav-logo">STELLA</a>
   <ul class="nav-menu" id="primary-menu">
-    <li><a href="/about">About</a></li>
-    <li><a href="/system">System</a></li>
-    <li><a href="/tiers">Tiers</a></li>
-    <li><a href="/process">Process</a></li>
-    <li><a href="/projects">Projects</a></li>
-    <li><a href="/showroom">Showroom</a></li>
+    <li><a href="about">About</a></li>
+    <li><a href="system">System</a></li>
+    <li><a href="tiers">Tiers</a></li>
+    <li><a href="process">Process</a></li>
+    <li><a href="projects">Projects</a></li>
+    <li><a href="showroom">Showroom</a></li>
   </ul>
   <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu">
     <span></span><span></span><span></span>
@@ -142,9 +142,14 @@
       <p class="body-m mt-2 reveal delay-2" style="font-style: italic; max-width: 600px; margin: 1rem auto;">Brief inquiries, requests for information, or anything that doesn't quite fit a phone call.</p>
     </div>
 
-    <form class="form-grid reveal delay-2" name="contact-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
-      <input type="hidden" name="form-name" value="contact-inquiry">
-      <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+    <!-- FormSubmit works on GitHub Pages and any static host (no API key).
+         If you later switch to Netlify Forms, drop the formsubmit action and restore data-netlify="true" with action="thank-you". Do not use both. -->
+    <form class="form-grid reveal delay-2" name="contact-inquiry" method="POST" action="https://formsubmit.co/concierge@stella.co.th" accept-charset="UTF-8">
+      <input type="hidden" name="_subject" value="STELLA contact inquiry">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://vutti14.github.io/stella-website/thank-you">
+      <p style="display:none;"><label>Don't fill this out: <input name="_honey" tabindex="-1" autocomplete="off"></label></p>
 
       <div class="form-row">
         <div class="form-field">
@@ -188,7 +193,7 @@
     <h2 class="cream mt-2 reveal">A quiet street, off Thonglor.</h2>
     <p class="body-m mt-2" style="font-style: italic;">Exact address shared upon appointment confirmation, with parking instructions.</p>
     <div class="mt-4">
-      <a href="/showroom" class="btn">Book your visit</a>
+      <a href="showroom" class="btn">Book your visit</a>
     </div>
   </div>
 </section>
@@ -206,18 +211,18 @@
     <div>
       <p class="footer-heading">Explore</p>
       <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/system">The System</a></li>
-        <li><a href="/tiers">Three Tiers</a></li>
-        <li><a href="/process">Process</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="system">The System</a></li>
+        <li><a href="tiers">Three Tiers</a></li>
+        <li><a href="process">Process</a></li>
       </ul>
     </div>
     <div>
       <p class="footer-heading">Visit</p>
       <ul>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/showroom">Showroom</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="projects">Projects</a></li>
+        <li><a href="showroom">Showroom</a></li>
+        <li><a href="contact">Contact</a></li>
       </ul>
     </div>
     <div>

@@ -60,8 +60,14 @@
     targets.forEach((el) => el.classList.add('is-visible'));
   }
 
-  /* ── Form submit "loading" state ───────────────── */
-  document.querySelectorAll('form[data-netlify="true"]').forEach((form) => {
+  /* ── Form submit: thank-you URL + loading state ── */
+  document.querySelectorAll('form[action*="formsubmit.co"]').forEach((form) => {
+    const next = form.querySelector('input[name="_next"]');
+    if (next) {
+      // Resolve relative to the current page so GitHub Pages and a future
+      // apex domain (site served from /) both land on this site's thank-you.
+      next.value = new URL('thank-you', window.location.href).href;
+    }
     form.addEventListener('submit', () => {
       const btn = form.querySelector('button[type="submit"], .btn');
       if (btn) {
