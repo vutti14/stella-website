@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://stella.co.th/sitemap.xml
+Sitemap: https://vutti14.github.io/stella-website/sitemap.xml

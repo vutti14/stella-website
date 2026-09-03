@@ -7,14 +7,14 @@
 <!-- SEO -->
 <title>Showroom — Hear the Difference | STELLA</title>
 <meta name="description" content="Book a 90-minute appointment at our Bangkok sound chamber. Hear the difference between Essential, Signature, and Reserve in the same five minutes.">
-<link rel="canonical" href="https://stella.co.th/showroom">
+<link rel="canonical" href="https://vutti14.github.io/stella-website/showroom">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Showroom — Hear the Difference | STELLA">
 <meta property="og:description" content="Book a 90-minute appointment at our Bangkok sound chamber. Hear the difference between Essential, Signature, and Reserve in the same five minutes.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://stella.co.th/showroom">
-<meta property="og:image" content="https://stella.co.th/og-image.png">
+<meta property="og:url" content="https://vutti14.github.io/stella-website/showroom">
+<meta property="og:image" content="https://vutti14.github.io/stella-website/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_US">
@@ -25,10 +25,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Showroom — Hear the Difference | STELLA">
 <meta name="twitter:description" content="Book a 90-minute appointment at our Bangkok sound chamber. Hear the difference between Essential, Signature, and Reserve in the same five minutes.">
-<meta name="twitter:image" content="https://stella.co.th/og-image.png">
+<meta name="twitter:image" content="https://vutti14.github.io/stella-website/og-image.png">
 
 <!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 
 <!-- Theme color (mobile browser chrome) -->
 <meta name="theme-color" content="#0E0E0E">
@@ -43,14 +43,14 @@
 
 <nav class="nav">
   <div class="nav-cta">+66 (0) 2 ___ ____</div>
-  <a href="/" class="nav-logo">STELLA</a>
+  <a href="./" class="nav-logo">STELLA</a>
   <ul class="nav-menu" id="primary-menu">
-    <li><a href="/about">About</a></li>
-    <li><a href="/system">System</a></li>
-    <li><a href="/tiers">Tiers</a></li>
-    <li><a href="/process">Process</a></li>
-    <li><a href="/projects">Projects</a></li>
-    <li><a href="/showroom" class="active">Showroom</a></li>
+    <li><a href="about">About</a></li>
+    <li><a href="system">System</a></li>
+    <li><a href="tiers">Tiers</a></li>
+    <li><a href="process">Process</a></li>
+    <li><a href="projects">Projects</a></li>
+    <li><a href="showroom" class="active">Showroom</a></li>
   </ul>
   <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu">
     <span></span><span></span><span></span>
@@ -95,9 +95,14 @@
       <p class="body-m mt-2" style="font-style: italic; max-width: 600px; margin: 1rem auto;">We will reply within 24 hours to confirm a time that works for both of us.</p>
     </div>
 
-    <form class="form-grid" style="margin: 0 auto;" name="showroom-booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
-      <input type="hidden" name="form-name" value="showroom-booking">
-      <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+    <!-- FormSubmit works on GitHub Pages and any static host (no API key).
+         If you later switch to Netlify Forms, drop the formsubmit action and restore data-netlify="true" with action="thank-you". Do not use both. -->
+    <form class="form-grid" style="margin: 0 auto;" name="showroom-booking" method="POST" action="https://formsubmit.co/concierge@stella.co.th" accept-charset="UTF-8">
+      <input type="hidden" name="_subject" value="STELLA showroom booking">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://vutti14.github.io/stella-website/thank-you">
+      <p style="display:none;"><label>Don't fill this out: <input name="_honey" tabindex="-1" autocomplete="off"></label></p>
       <div class="form-row">
         <div class="form-field">
           <label class="form-label" for="name">Full Name</label>
@@ -188,18 +193,18 @@
     <div>
       <p class="footer-heading">Explore</p>
       <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/system">The System</a></li>
-        <li><a href="/tiers">Three Tiers</a></li>
-        <li><a href="/process">Process</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="system">The System</a></li>
+        <li><a href="tiers">Three Tiers</a></li>
+        <li><a href="process">Process</a></li>
       </ul>
     </div>
     <div>
       <p class="footer-heading">Visit</p>
       <ul>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/showroom">Showroom</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="projects">Projects</a></li>
+        <li><a href="showroom">Showroom</a></li>
+        <li><a href="contact">Contact</a></li>
       </ul>
     </div>
     <div>
@@ -217,7 +222,7 @@
   </div>
 </footer>
 
-<script src="/scripts.js" defer></script>
+<script src="scripts.js" defer></script>
 
 </body>
 </html>
