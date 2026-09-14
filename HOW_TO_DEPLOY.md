@@ -81,5 +81,4 @@ FormSubmit was chosen so GitHub Pages has a working backend. If you deploy on Ne
 - [ ] Test the contact form end-to-end (submit a test → check email → land on thank-you)
 - [ ] Test the showroom form end-to-end
 - [ ] Open the site on a phone — check the hamburger menu
-- [ ] Real phone number in nav + footer (search `+66 (0) 2 ___ ____`) when you have it
 - [ ] After a custom domain: rewrite canonical / OG / sitemap URLs to that origin
