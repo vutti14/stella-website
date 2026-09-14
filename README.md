@@ -1,6 +1,6 @@
 # STELLA Website
 
-Static marketing site for STELLA architectural glazing. Nine pages, no build step.
+Static marketing site for STELLA architectural glazing. No build step.
 
 **Live site:** https://vutti14.github.io/stella-website/
 
@@ -21,11 +21,13 @@ stella-website/
 ├── contact.html        Direct lines + inquiry form
 ├── showroom.html       Sound-chamber appointment form
 ├── thank-you.html      Form-success page
+├── 404.html            GitHub Pages / Netlify not-found page
 ├── styles.css          Master stylesheet (shared)
 ├── scripts.js          Mobile menu, scroll reveal, form UX
 ├── favicon.svg         Brand mark
 ├── og-image.png        Social-share image
 ├── og-image.svg        Social-share source
+├── images/             Architectural photography (WebP)
 ├── netlify.toml        Optional Netlify hosting config
 ├── _redirects          Netlify clean-URL rewrites
 ├── robots.txt          SEO crawler rules
@@ -87,21 +89,20 @@ Then open http://127.0.0.1:8080/
 
 ## What still needs real content
 
-1. **Phone number** — replace `+66 (0) 2 ___ ____` everywhere with the real number
-2. **Email addresses** — confirm `concierge@`, `design@`, `projects@`, `care@` are set up
-3. **Showroom address** — currently general; add when you want it public (or keep "Thonglor, by appointment")
-4. **Project photography** — replace `.placeholder` cards in `projects.html` with real shots when ready
-5. **Verify Thai copy** — the existing translations are in the prototype; final copy review by the team is recommended
-6. **Canonical / OG / sitemap origin** — currently `https://vutti14.github.io/stella-website/`. After attaching a custom domain, update those absolute URLs (see `HOW_TO_DEPLOY.md`)
+1. **Email addresses** — confirm `concierge@`, `design@`, `projects@`, `care@` are set up
+2. **Showroom address** — currently general; add when you want it public (or keep "Thonglor, by appointment")
+3. **Project photography** — the five named studies are forthcoming atmospheric studies; replace with completed case studies when homes are released
+4. **Verify Thai copy** — the existing translations are in the prototype; final copy review by the team is recommended
+5. **Canonical / OG / sitemap origin** — currently `https://vutti14.github.io/stella-website/`. After attaching a custom domain, update those absolute URLs (see `HOW_TO_DEPLOY.md`)
 
 ---
 
 ## Updating contact info
 
 Open any `.html` file in any text editor and search for:
-- `+66 (0) 2 ___ ____` — replace with the real phone
 - `concierge@stella.co.th` — replace if a different email is preferred (also update the FormSubmit `action` on `contact.html` and `showroom.html`)
 - `Thonglor, Sukhumvit` — update if the showroom address changes
+- Nav and footer appointment CTAs currently link to `showroom` (`Book a visit` / `By appointment · Thonglor`)
 
 ---
 

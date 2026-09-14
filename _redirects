@@ -10,6 +10,9 @@
 /contact         /contact.html    200
 /showroom        /showroom.html   200
 
+# Custom 404 (Netlify). GitHub Pages serves 404.html automatically.
+/*               /404.html        404
+
 # Force HTTPS redirect (Netlify handles this automatically but explicit is better)
 http://stella.co.th/*    https://stella.co.th/:splat    301!
 http://www.stella.co.th/* https://stella.co.th/:splat    301!
