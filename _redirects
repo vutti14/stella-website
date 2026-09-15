@@ -10,6 +10,7 @@
 /contact         /contact.html    200
 /showroom        /showroom.html   200
 /gallery         /gallery.html    200
+/knowledge       /knowledge.html  200
 
 # Custom 404 (Netlify). GitHub Pages serves 404.html automatically.
 /*               /404.html        404
