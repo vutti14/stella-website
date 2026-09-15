@@ -18,12 +18,16 @@ stella-website/
 ├── tiers.html          Essential / Signature / Reserve
 ├── process.html        Five conversations (timeline)
 ├── projects.html       Project gallery
+├── gallery.html        Volume One studies
+├── knowledge.html      Building science (standards + typical design targets)
 ├── contact.html        Direct lines + inquiry form
 ├── showroom.html       Sound-chamber appointment form
 ├── thank-you.html      Form-success page
 ├── 404.html            GitHub Pages / Netlify not-found page
 ├── styles.css          Master stylesheet (shared)
 ├── scripts.js          Mobile menu, scroll reveal, form UX
+├── scripts/ci_check.py Deterministic CI checks (relative URLs, images, nav)
+├── .github/workflows/ci.yml  Pull-request + main checks (no deploy)
 ├── favicon.svg         Brand mark
 ├── og-image.png        Social-share image
 ├── og-image.svg        Social-share source
@@ -45,7 +49,9 @@ That is required for a GitHub Pages *project* site (`https://user.github.io/stel
 
 The same relative URLs also work if the site is later served from a custom domain at the site root (`https://stella.co.th/about`).
 
-Clean URLs (`/about`, not only `/about.html`) already work on GitHub Pages. Do not add a trailing slash (`/about/` is a 404 there). On Netlify, `_redirects` rewrites `/about` → `about.html`.
+Clean URLs (`/about`, not only `/about.html`) already work on GitHub Pages. Do not add a trailing slash (`/about/` is a 404 there). On Netlify, `_redirects` rewrites `/about` → `about.html` (and `/knowledge` → `knowledge.html`).
+
+`python3 scripts/ci_check.py` is the CI job: it fails if an `images/` reference is missing, if a nav page is missing, if a blank phone placeholder (`___ ____`) appears, or if a root-absolute project path (`href="/about"`) sneaks in. It does not deploy and does not need secrets.
 
 ---
 

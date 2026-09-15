@@ -6,6 +6,8 @@ The production site is **GitHub Pages**: https://vutti14.github.io/stella-websit
 
 There is no build step. GitHub Pages is already enabled on `main` (`/` as the publishing folder). Merging to `main` republishes the site.
 
+A separate **CI** workflow (`.github/workflows/ci.yml`) runs `python3 scripts/ci_check.py` on pull requests and on pushes to `main`. It does not deploy, does not use secrets, and does not replace GitHub’s Pages build.
+
 ---
 
 ## Option 1 — GitHub Pages (current production)
